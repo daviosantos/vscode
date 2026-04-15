@@ -1,60 +1,66 @@
-# 🧬 NLP PubMed Analytics Pipeline
+# analytics-ml-projects
 
-Um pipeline completo, otimizado e resiliente de Processamento de Linguagem Natural (PLN) para extração, processamento e análise de abstracts de artigos científicos da base de dados médica PubMed.
+Portfolio repository for Analytics and Machine Learning projects, with a focus on applied data science, experimentation, and reproducible notebooks.
 
-## 🚀 Visão Geral
-Este projeto foi desenvolvido com foco em Engenharia Analítica e boas práticas de software. O pipeline coleta dados de quatro especialidades médicas (Cardiologia, Oncologia, Neurologia e Dermatologia) e aplica técnicas de Machine Learning tradicional e Deep Learning (Transformers) para extrair insights automatizados.
+Repositorio de portfolio para projetos de Analytics e Machine Learning, com foco em ciencia de dados aplicada, experimentacao e notebooks reproduziveis.
 
-## 🧠 Funcionalidades e Arquitetura
-O código é orientado a objetos e estruturado em uma classe unificada (`NLPPipeline`) com as seguintes etapas:
+## PT-BR
 
-1. **Data Ingestion:** Coleta automatizada via API do NCBI (Biopython) com lógica de *retry* para tolerância a falhas.
-2. **Pré-processamento:** Limpeza de texto, remoção de caracteres, stopwords médicas customizadas e lematização otimizada com `@lru_cache`.
-3. **Vetorização:** Geração de embeddings semânticos utilizando `sentence-transformers` (`all-MiniLM-L6-v2`) com *fallback* automático para `TF-IDF`.
-4. **Classificação:** Modelos `Random Forest` e `GaussianNB`, além de classificação *Zero-Shot* via `BART`.
-5. **Modelagem de Tópicos (LDA):** Descoberta de clusters de palavras utilizando `Gensim`.
-6. **Sumarização Automática:** Geração de resumos abstrativos e extrativos (LSA e Transformers) com rotinas de contingência.
+### Sobre
+Este repositorio centraliza estudos, experimentos e projetos praticos de Analytics e ML.
+O objetivo e documentar o ciclo completo de analise: exploracao de dados, modelagem, avaliacao e comunicacao de resultados.
 
-> **Destaque Técnico:** O projeto possui um `PackageManager` customizado. Se uma biblioteca pesada (como PyTorch ou Transformers) falhar por problemas de infraestrutura local, o código não quebra; ele executa automaticamente algoritmos de fallback estatísticos para entregar a análise.
+### O que voce vai encontrar
+- Notebooks de exploracao e analise de dados.
+- Projetos de NLP, modelagem estatistica e machine learning aplicado.
+- Estudos com Spark e processamento de dados em escala.
+- Materiais academicos e experimentos tecnicos.
 
-## 📁 Arquivos Incluídos no GitHub
-- `Davi_pln_pubmed.ipynb`: notebook principal do projeto.
-- `.env.example`: modelo de variáveis de ambiente.
-- `README.md`: documentação do projeto.
-- `requirements.txt`: dependências necessárias.
-- `.gitignore`: regras para manter arquivos sensíveis e temporários fora do repositório.
+### Estrutura atual
+- Notebooks: arquivos `.ipynb` na raiz do repositorio.
+- Dependencias: `requirements.txt`.
+- Script utilitario: `patch_embedding_notebook.py`.
 
-## 🛠️ Como Executar o Projeto
+### Como executar localmente
+1. Clone o repositorio.
+2. Crie e ative um ambiente virtual.
+3. Instale as dependencias com `pip install -r requirements.txt`.
+4. Abra os notebooks no Jupyter/VS Code e execute as celulas.
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/nlp-pubmed-analytics.git
-cd nlp-pubmed-analytics
-```
+## EN
 
-2. Crie e ative um ambiente virtual:
-```bash
-python -m venv .venv
-# No Windows
-.\.venv\Scripts\activate
-# No Linux/Mac
-# source .venv/bin/activate
-```
+### About
+This repository is a portfolio hub for Analytics and ML projects.
+It documents the end-to-end analytics workflow: data exploration, modeling, evaluation, and results communication.
 
-3. Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
+### What you will find
+- Data analysis and exploration notebooks.
+- NLP, statistical modeling, and applied machine learning projects.
+- Spark studies for scalable data processing.
+- Academic materials and technical experiments.
 
-4. Configure as variáveis de ambiente:
-```bash
-copy .env.example .env
-```
-No Windows, edite o arquivo `.env` e adicione sua chave do NCBI:
-```bash
-ENTREZ_API_KEY=sua_chave_aqui_sem_aspas
-```
+### Current structure
+- Notebooks: `.ipynb` files at repository root.
+- Dependencies: `requirements.txt`.
+- Utility script: `patch_embedding_notebook.py`.
 
-5. Execute o Jupyter Notebook:
+### Run locally
+1. Clone the repository.
+2. Create and activate a virtual environment.
+3. Install dependencies with `pip install -r requirements.txt`.
+4. Open notebooks in Jupyter/VS Code and run the cells.
 
-Abra o arquivo `Davi_pln_pubmed.ipynb` no Jupyter e execute todas as células.
+## Suggested GitHub About
+Applied Analytics and Machine Learning projects with reproducible notebooks, NLP experiments, and scalable data workflows.
+
+## Suggested GitHub Topics
+`analytics`
+`machine-learning`
+`data-science`
+`nlp`
+`python`
+`jupyter-notebook`
+`spark`
+`feature-engineering`
+`model-evaluation`
+`portfolio`
