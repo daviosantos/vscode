@@ -20,6 +20,9 @@ O codigo e orientado a objetos e estruturado em uma classe unificada (`NLPPipeli
 ## 📁 Arquivos deste Projeto
 - `Davi_pln_pubmed.ipynb`: notebook principal do projeto.
 - `patch_embedding_notebook.py`: script utilitario para ajuste de embeddings no notebook.
+- `requirements.txt`: dependencias do projeto.
+- `.env.example`: modelo de variaveis de ambiente.
+- `.gitignore`: regras locais de ignorar arquivos do projeto.
 - `README.md`: documentacao do projeto.
 
 ## 🛠️ Como Executar o Projeto
@@ -33,9 +36,9 @@ python -m venv .venv
 # source .venv/bin/activate
 ```
 
-2. Instale as dependencias da raiz do repositorio:
+2. Instale as dependencias deste projeto:
 ```bash
-pip install -r requirements.txt
+pip install -r projects/nlp-pubmed-analytics/requirements.txt
 ```
 
 3. Abra e execute o notebook deste projeto:
