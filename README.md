@@ -1,66 +1,43 @@
 # analytics-ml-projects
 
-Portfolio repository for Analytics and Machine Learning projects, with a focus on applied data science, experimentation, and reproducible notebooks.
-
-Repositorio de portfolio para projetos de Analytics e Machine Learning, com foco em ciencia de dados aplicada, experimentacao e notebooks reproduziveis.
+Repositorio geral de projetos de Analytics e Machine Learning, incluindo notebooks de estudo, experimentos tecnicos e casos aplicados.
 
 ## PT-BR
 
 ### Sobre
-Este repositorio centraliza estudos, experimentos e projetos praticos de Analytics e ML.
-O objetivo e documentar o ciclo completo de analise: exploracao de dados, modelagem, avaliacao e comunicacao de resultados.
+Este e o README geral do repositorio. Cada projeto pode ter sua propria pasta com documentacao dedicada.
 
-### O que voce vai encontrar
-- Notebooks de exploracao e analise de dados.
-- Projetos de NLP, modelagem estatistica e machine learning aplicado.
-- Estudos com Spark e processamento de dados em escala.
-- Materiais academicos e experimentos tecnicos.
+### Estrutura
+- `projects/nlp-pubmed-analytics/`: projeto NLP PubMed com README proprio.
+- Notebooks de estudo na raiz (Spark, DataFrames, analises academicas).
+- Dependencias compartilhadas em `requirements.txt`.
 
-### Estrutura atual
-- Notebooks: arquivos `.ipynb` na raiz do repositorio.
-- Dependencias: `requirements.txt`.
-- Script utilitario: `patch_embedding_notebook.py`.
+### Projeto em destaque
+- NLP PubMed Analytics Pipeline:
+	- Projeto: `projects/nlp-pubmed-analytics/`
+	- Documentacao: `projects/nlp-pubmed-analytics/README.md`
 
-### Como executar localmente
-1. Clone o repositorio.
-2. Crie e ative um ambiente virtual.
-3. Instale as dependencias com `pip install -r requirements.txt`.
-4. Abra os notebooks no Jupyter/VS Code e execute as celulas.
+### Como executar
+1. Crie e ative um ambiente virtual.
+2. Instale dependencias com `pip install -r requirements.txt`.
+3. Abra o notebook ou projeto desejado no VS Code/Jupyter.
 
 ## EN
 
 ### About
-This repository is a portfolio hub for Analytics and ML projects.
-It documents the end-to-end analytics workflow: data exploration, modeling, evaluation, and results communication.
+This is the repository-level README. Individual projects can have their own folders with dedicated documentation.
 
-### What you will find
-- Data analysis and exploration notebooks.
-- NLP, statistical modeling, and applied machine learning projects.
-- Spark studies for scalable data processing.
-- Academic materials and technical experiments.
+### Structure
+- `projects/nlp-pubmed-analytics/`: NLP PubMed project with its own README.
+- Study notebooks at repository root (Spark, DataFrames, academic analyses).
+- Shared dependencies in `requirements.txt`.
 
-### Current structure
-- Notebooks: `.ipynb` files at repository root.
-- Dependencies: `requirements.txt`.
-- Utility script: `patch_embedding_notebook.py`.
+### Highlighted project
+- NLP PubMed Analytics Pipeline:
+	- Project folder: `projects/nlp-pubmed-analytics/`
+	- Documentation: `projects/nlp-pubmed-analytics/README.md`
 
-### Run locally
-1. Clone the repository.
-2. Create and activate a virtual environment.
-3. Install dependencies with `pip install -r requirements.txt`.
-4. Open notebooks in Jupyter/VS Code and run the cells.
-
-## Suggested GitHub About
-Applied Analytics and Machine Learning projects with reproducible notebooks, NLP experiments, and scalable data workflows.
-
-## Suggested GitHub Topics
-`analytics`
-`machine-learning`
-`data-science`
-`nlp`
-`python`
-`jupyter-notebook`
-`spark`
-`feature-engineering`
-`model-evaluation`
-`portfolio`
+### Run
+1. Create and activate a virtual environment.
+2. Install dependencies with `pip install -r requirements.txt`.
+3. Open the target notebook or project in VS Code/Jupyter.
