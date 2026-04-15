@@ -1,50 +1,24 @@
-# Environment variables
-.env
-.env.local
-.env.production
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
+# Ambientes Virtuais
 .venv/
 venv/
-ENV/
 env/
 
-# IDE
+# Arquivos de ambiente e chaves
+.env
+
+# Cache e artefatos do Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Dados e Modelos baixados (opcional, se você salvar localmente)
+*.csv
+*.safetensors
+
+# Editor
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Temporary files
-*.tmp
-*.temp
+# Ignorar notebooks exceto o principal
+*.ipynb
+!Davi_pln_pubmed.ipynb
